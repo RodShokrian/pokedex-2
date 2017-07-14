@@ -10,6 +10,10 @@ import { values } from 'lodash';
 //   return allPokemons;
 // };
 
-export const selectAllPokemon = ({ pokemon }) => values(pokemon);
+export const selectAllPokemon = ({ pokemon }) => values(pokemon.entities);
+export const selectCurrentPokemon = ( {pokemon} ) =>{
+    // debugger;
+    return pokemon.entities[pokemon.currentPoke];
+ };
 
 window.selectAllPokemon = selectAllPokemon;
