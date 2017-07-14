@@ -4,7 +4,7 @@ import PokemonDetail from './pokemon_detail';
 import {selectCurrentPokemon} from '../../reducers/selectors';
 const mapStateToProps = ({pokemon, items}) => ({
   pokemon: pokemon.entities[pokemon.currentPoke],
-  items
+    items
 });
 
 const mapDispatchToProps = dispatch => ({
